@@ -3,6 +3,9 @@ import functions as functions
 
 
 first_person = model.Person('Cristiano', 29)
+second_person = model.Person('Dias', 29)
+people = [first_person, second_person]
+for person in people:
+    functions.print_details(person)
 
-for i in range :
-    functions.print_details(first_person)
+functions.print_diamond()
