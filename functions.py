@@ -32,3 +32,42 @@ def read_and_manipulate_text(word_to_search):
     
         print('The indexes of the word searched is :' + str(ocurrences))
 
+def create_and_write():
+    text_to_write = open('test2.txt', 'w')
+    text_to_write.write('Hello, this is a test!')
+    text_to_write.close()
+
+    file = open('test2.txt')
+    test = file.read()
+    print(test)
+
+
+
+def read_and_write():
+    new_created_file = open('test3.txt', 'w')
+    new_created_file.close()
+
+    text = open('test.txt', 'r')
+    new_text = text.read()
+    text.close()
+    split_text = new_text.split(' ')
+
+    new_file = open('test3.txt', 'a')
+    cardinal = 1
+    for words in split_text:
+        new_file.write(words)
+        new_file.write(" "*(15-len(words)))
+        new_file.write(str(cardinal) + 'th word\n')
+        cardinal +=1
+    new_file.close()
+
+    file_to_print = open('test3.txt')
+
+    print(file_to_print.read())
+
+
+
+
+
+
+    
