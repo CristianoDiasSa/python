@@ -8,7 +8,7 @@ or             7th word
 other          8th word
 piece          9th word
 of             10th word
-writing,       11th word
+writing        11th word
 as             12th word
 distinct       13th word
 from           14th word
@@ -16,11 +16,11 @@ other          15th word
 material       16th word
 such           17th word
 as             18th word
-notes,         19th word
-appendices,    20th word
+notes          19th word
+appendices     20th word
 and            21th word
-illustrations. 22th word
-"the           23th word
+illustrations  22th word
+the            23th word
 pictures       24th word
 are            25th word
 clear          26th word
@@ -29,4 +29,4 @@ relate         28th word
 well           29th word
 to             30th word
 the            31th word
-text"          32th word
+text           32th word

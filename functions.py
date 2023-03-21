@@ -1,8 +1,12 @@
+# Imports
+import string
+
+# Functions
 def print_details(person):
     print("This person name is " + person.name)
     print("This person age is " + str(person.age))
 
-
+# Print a diamond shape
 def print_diamond():
     rows = int(input('Enter the number of rows: '))
     for i in range(rows):
@@ -10,7 +14,7 @@ def print_diamond():
     for i in range(rows - 2, -1, -1):
         print(" " * (rows - i), "*" * (2 * i + 1))
 
-
+# Read and manipulate data from file
 def read_and_manipulate_text(word_to_search):
     file = open('test.txt')
     text = file.read()
@@ -31,18 +35,7 @@ def read_and_manipulate_text(word_to_search):
                 ocurrences.append(index)
     
         print('The indexes of the word searched is :' + str(ocurrences))
-
-def create_and_write():
-    text_to_write = open('test2.txt', 'w')
-    text_to_write.write('Hello, this is a test!')
-    text_to_write.close()
-
-    file = open('test2.txt')
-    test = file.read()
-    print(test)
-
-
-
+# Create, read and write files
 def read_and_write():
     new_created_file = open('test3.txt', 'w')
     new_created_file.close()
@@ -50,7 +43,9 @@ def read_and_write():
     text = open('test.txt', 'r')
     new_text = text.read()
     text.close()
-    split_text = new_text.split(' ')
+    # Removing all punctuation from the text to clean the data
+    string_with_no_punctuation = new_text.translate(str.maketrans('', '', string.punctuation))
+    split_text = string_with_no_punctuation.split(' ')
 
     new_file = open('test3.txt', 'a')
     cardinal = 1
@@ -65,7 +60,10 @@ def read_and_write():
 
     print(file_to_print.read())
 
-
+# Function to clean punctuation from given string
+def clean_punctuation(string_to_clean):
+    string_with_no_punctuation = string_to_clean.translate(str.maketrans('','', string.punctuation))
+    print(string_with_no_punctuation)
 
 
 

@@ -13,4 +13,5 @@ fc.print_diamond()
 
 #fc.read_and_manipulate_text('the')
 #fc.create_and_write()
-fc.read_and_write()
+#fc.read_and_write()
+fc.clean_punctuation('?!:This will be cleaned')
